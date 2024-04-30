@@ -1,0 +1,8 @@
+apple 蘋果       
+overview 概要
+provider 供應者
+matter 問題
+expertise 專門知識
+demonstrate 證明
+remainder 剩餘
+extend 延長
