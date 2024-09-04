@@ -5,7 +5,6 @@ using namespace std;
 
 fstream fs;
 
-
 // 單字的型態
 struct VocType {
   string eng, zh;
@@ -41,7 +40,6 @@ void searchVoc(){
 }
 // 存檔退出
 void saveExit(){
-
 }
 
 int main(){

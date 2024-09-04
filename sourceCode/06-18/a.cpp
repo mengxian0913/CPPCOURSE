@@ -2,10 +2,12 @@
 #include <algorithm>
 #include <vector>
 #include <cstdlib>
+#include <fstream>
 using namespace std;
  
-bool endProgram = false;
-vector <pair<string,double>> student;
+bool runProgram = true;
+fstream fs;
+vector <pair<string,string>> student;
  
 void showInfo() {
   cout << "1. Insert a value\n";
@@ -17,7 +19,7 @@ void showInfo() {
 }
  
 void insertValue() {
-  pair <string,double>value;
+  pair <string,double> voc;
   cin >> value.first >> value.second;
   student.push_back(value);
   return;
@@ -33,7 +35,7 @@ void deleteValue() {
 void printAll() {
   int n=student.size();
   for(int i=0;i<n;i++){
-    cout << student[i].first<<" "<<student[i].second<< "\n";
+    cout << student[i].first << " " << student[i].second << "\n";
   }
   return;
 }
@@ -49,10 +51,17 @@ void sortAll() {
   return;
 }
  
+void getVoc() {
+  fs.open("./voc.txt");
+
+}
+
 int main() {
   int mode = -1;
+  
+  getVoc();
  
-  while(!endProgram) {
+  while(runProgram) {
     system("clear");
     showInfo();
     cin >> mode;

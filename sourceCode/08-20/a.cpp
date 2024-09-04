@@ -1,12 +1,5 @@
 #include <bits/stdc++.h>
-
-// #include <iostream>
-// #include <vector>
-// #include <algorithm>
 using namespace std;
-
-//  pair<T1, T2> 
-//  vector<T>
 
 int main() {
  int n;
@@ -37,4 +30,3 @@ int main() {
   cout << k << "\n";
 
 }
-
